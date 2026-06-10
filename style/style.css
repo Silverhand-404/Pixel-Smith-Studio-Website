@@ -1,0 +1,138 @@
+/* ===== ПЕРЕМЕННЫЕ ===== */
+:root {
+    --dark: #2d2d2d;
+    --green: #4a6741;
+    --white: #FAEBD7;
+    --light-bg: #FAEBD7;
+    --text: #222222;
+    --font-serif: Georgia, 'Times New Roman', serif;
+    --font-mono: 'Courier New', Courier, monospace;
+}
+
+/* ===== СБРОС СТИЛЕЙ ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-serif);
+    background-color: var(--white);
+    color: var(--text);
+}
+
+/* ===== ШАПКА ===== */
+header {
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    height: 60px;
+}
+
+.logo {
+    width: 16px;
+    height: 16px;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: underline;
+    font-family: var(--font-serif);
+    font-size: 16px;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+main {
+    padding: 40px 60px;
+}
+
+/* ===== О КОМПАНИИ ===== */
+.about-section h2 {
+    text-align: center;
+    font-size: 32px;
+    font-family: var(--font-serif);
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* ===== КАРТОЧКА НОВОСТИ ===== */
+.news-card {
+    background-color: var(--green);
+    border-radius: 16px;
+    display: flex;
+    overflow: hidden;
+    min-height: 260px;
+}
+
+.news-card .news-image {
+    width: 35%;
+    min-height: 260px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.news-card .news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-card .news-text {
+    padding: 30px 40px;
+    color: var(--white);
+    flex: 1;
+}
+
+.news-card .news-text h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-family: var(--font-serif);
+}
+
+.news-card .news-text p {
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+/* ===== ПОДВАЛ ===== */
+footer {
+    background-color: var(--dark);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin-top: 60px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.footer-right img {
+    width: 36px;
+    height: 36px;
+}
