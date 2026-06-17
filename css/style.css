@@ -22,6 +22,10 @@ body {
     color: var(--text);
 }
 
+ul {
+    list-style-position: inside;
+}
+
 /* ===== ШАПКА ===== */
 header {
     background-color: var(--dark);
@@ -162,4 +166,226 @@ footer {
 .footer-right img {
     width: 36px;
     height: 36px;
+}
+
+/* ===== КАРТОЧКИ ИГР ===== */
+
+.games {
+    display: flex;
+    gap: 70px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-card {
+    display: flex;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 16px;
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-stick {
+    background-color: var(--dark);
+    width: 20px;
+    height: 550px;
+    border-radius: 16px;
+}
+
+.game-img{
+    width: 460px;
+    height: 240px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.game-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.game-info {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.game-info h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: var(--font-serif);
+    margin-bottom: 20px;
+}
+
+.game-info a {
+    color: var(--white);
+    text-decoration: underline;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* ===== КАРТОЧКИ КОМАНДЫ ===== */
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-card {
+    background-color: var(--green);
+    border-radius: 16px;
+    display: flex;
+    overflow: hidden;
+    height: 220px;
+}
+
+.team-card .team-image {
+    width: auto;
+    height: 220px;
+    overflow: hidden;
+}
+
+.team-card .team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card .team-text {
+    padding: 30px 40px;
+    color: var(--white);
+    flex: 1;
+}
+
+.team-card .team-text h3 {
+    font-size: 30px;
+    margin-bottom: 16px;
+    font-family: var(--font-serif);
+}
+
+.team-card .team-text p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .team-text {
+    text-align: right;
+}
+
+/* ===== КАРТОЧКИ НОВОСТЕЙ ===== */
+
+.news {
+    display: flex;
+    gap: 30px;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.news-plate-max {
+    background-color: var(--green);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 58%;
+    height: 310px;
+     text-align: center;
+}
+
+.news-plate-min {
+    background-color: var(--green);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 40%;
+    height: 310px;
+    text-align: center;
+}
+
+.news-plate-max .news-image {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.news-plate-max .news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-text {
+    padding: 30px 40px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px; 
+}
+
+.news-text p {
+    font-size: 20px;
+    font-family: var(--font-serif);
+}
+
+/* ===== СТРАНИЦА РЕГИСТРАЦИИ ===== */
+
+.profile {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;   
+}
+
+.profile-form input {
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--font-serif);
+    padding: 10px;
+    border-radius: 16px;
+    border: 0px;
+    font-size: 30px;
+    width: 300px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
 }
